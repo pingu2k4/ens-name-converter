@@ -21,7 +21,7 @@ while (true)
 
     var nameHash = ensUtil.GetNameHash(domain);
 
-    var labelHash = ensUtil.GetLabelHash(domain[..4]);
+    var labelHash = ensUtil.GetLabelHash(domain[..^4]);
 
     var nameHashHex = new HexBigInteger(nameHash);
 
